@@ -27,6 +27,11 @@ echo "this is security stage"
 }
 }
 stage ('Approval') {
+input{
+ message "Should we continue?"
+                ok "Yes"
+                submitter "labinothalilaj"
+}
 steps {
 
 echo "this is approval stage"
