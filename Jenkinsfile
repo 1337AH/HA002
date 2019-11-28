@@ -30,13 +30,9 @@ stage ('Approval') {
 input {
 message "Should we continue?"
                 ok "Yes, we should."
-                submitter "labinothalilaj"
-                parameters {
-                    string(name: 'PERSON', defaultValue: 'Arlind', description: 'Who should I say hello to?')
-}
+                submitter "labinothalilaj,arlindhoxha"
 }
 steps {
-echo "Hello, ${PERSON}, nice to meet you."
 echo "this is approval stage"
 }
 }
